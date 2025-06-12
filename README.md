@@ -38,7 +38,7 @@ lon
 # What the Script Does
 
 1. **Load and display the source image. Converted from pdf.**  
-   ![Source Image](albuquerque.png)
+   ![Source Image](images/albuquerque.png)
 
 2. **Convert it to HSV color space to isolate green-colored features using a specified color range.**  
    **Apply masking and contour detection to extract features (blobs).**  
