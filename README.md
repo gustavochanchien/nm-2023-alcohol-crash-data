@@ -37,7 +37,7 @@ lon
 
 # What the Script Does
 
-1. **Load and display the source image.**  
+1. **Load and display the source image. Converted from pdf.**  
    ![Source Image](albuquerque.png)
 
 2. **Convert it to HSV color space to isolate green-colored features using a specified color range.**  
