@@ -37,16 +37,25 @@ lon
 
 # What the Script Does
 
-Load and display the source image.
-Convert it to HSV color space to isolate green-colored features using a specified color range.
-Apply masking and contour detection to extract features (blobs).
-Calculate centroids of those blobs, excluding any that are too close to a reference point.
-Plot centroids on the original image.
-Overlay GCPs on the image and a real-world basemap for sanity checks.
-Fit linear regression models to transform pixel coordinates into geographic coordinates.
-Predict GPS positions of the detected centroids.
-Visualize results side-by-side (image and map).
-Export results to centroid_geocoordinates.csv.
+1. **Load and display the source image.**  
+   ![Source Image](albuquerque.png)
+
+2. **Convert it to HSV color space to isolate green-colored features using a specified color range.**  
+   **Apply masking and contour detection to extract features (blobs).**  
+   ![Masked Green Features](images/mask.png)
+
+3. **Calculate centroids of those blobs, excluding any that are too close to a reference point (e.g., a map legend).**  
+   ![Detected Centroids](images/centroids.png)
+
+4. **Overlay GCPs on the image and a real-world basemap for sanity checks.**
+
+5. **Fit linear regression models to transform pixel coordinates into geographic coordinates.**  
+   **Predict GPS positions of the detected centroids.**  
+   **Visualize results side-by-side (image and map).**  
+   ![Final Output](images/finaloutput.png)
+
+6. **Export results to `centroid_geocoordinates.csv`.**
+
 
 # Output
 
